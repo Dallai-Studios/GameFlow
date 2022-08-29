@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace GameFlow.General.Events
 {
-    [CreateAssetMenu(fileName = "Event Emitter", menuName = "Game Flow/Events/Event Emitter")]
+    [CreateAssetMenu(fileName = "Event Emitter", menuName = "Game Flow/General/Events/Event Emitter")]
     public class EventEmitter : ScriptableObject
     {
         [Header("Event Configuration")]
