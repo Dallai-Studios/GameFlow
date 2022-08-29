@@ -1,4 +1,4 @@
-## [Unreleased]
+## [0.0.1] - 08.28.2002
 ### Changes
 - New 'SimpleSceneSwitcher' component that can handle Scene loading from any gameobjects
 - New 'GameGeneralConfiguration' scriptable object to configure all the main attributes on the game
