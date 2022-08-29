@@ -1,3 +1,9 @@
+## [Unreleased]
+### Changes
+- New License for the framework
+### Fixed Bugs
+- None
+
 ## [0.0.2] 08.29.2022
 ### Changes
 - New 'GameFlowManager' Singleton
