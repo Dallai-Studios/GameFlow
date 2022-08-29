@@ -1,3 +1,12 @@
+## [Unreleased]
+### Changes
+- New 'GameFlowManager' Singleton
+- New process of runtime injection of all managers
+- New code regions
+- New GameFlow framework Logo
+### Fixed Bugs
+- None
+
 ## [0.0.1] - 08.28.2002
 ### Changes
 - New 'SimpleSceneSwitcher' component that can handle Scene loading from any gameobjects
