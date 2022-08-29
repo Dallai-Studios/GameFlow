@@ -4,6 +4,7 @@
 - New process of runtime injection of all managers
 - New code regions
 - New GameFlow framework Logo
+- New Events for GameGeneralConfiguration SO
 ### Fixed Bugs
 - None
 
