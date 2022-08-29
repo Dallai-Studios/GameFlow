@@ -1,4 +1,4 @@
-## [Unreleased]
+## [0.0.2] 08.29.2022
 ### Changes
 - New 'GameFlowManager' Singleton
 - New process of runtime injection of all managers
@@ -8,7 +8,7 @@
 ### Fixed Bugs
 - None
 
-## [0.0.1] - 08.28.2002
+## [0.0.1] - 08.28.2022
 ### Changes
 - New 'SimpleSceneSwitcher' component that can handle Scene loading from any gameobjects
 - New 'GameGeneralConfiguration' scriptable object to configure all the main attributes on the game
