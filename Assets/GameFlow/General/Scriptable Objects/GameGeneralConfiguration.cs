@@ -6,8 +6,7 @@ namespace GameFlow.General.ScriptableObjects
     [CreateAssetMenu(fileName = "Game General Config", menuName = "Game Flow/General/Config/Game General Config")]
     public class GameGeneralConfiguration : ScriptableObject
     {
-        #region "Serialized Properties"
-            [Header("Game General Configurations")]
+        [Header("Game General Configurations")]
             [Tooltip("Define the game master volume")]
             [Range(0,1)] public float MasterVolume;
 
@@ -22,9 +21,7 @@ namespace GameFlow.General.ScriptableObjects
 
             [Tooltip("Define the game target frame rate")]
             public int TargetFrameRate;
-        #endregion
 
-        #region "Events"
             public event Action OnChangeTargetFrameRate;
             public event Action OnChangeMasterVolume;
             public event Action OnChangeMusicVolume;
@@ -36,6 +33,5 @@ namespace GameFlow.General.ScriptableObjects
             public void RaiseEventOnChangeSoundEffectsVolume() => this.OnChangeSoundEffectsVolume?.Invoke();
             public void RaiseEventOnChangeVoiceVolume() => this.OnChangeVoiceVolume?.Invoke();
             public void RaiseEventOnChangeTargetFrameRate() => this.OnChangeTargetFrameRate?.Invoke();
-        #endregion
     }
 }

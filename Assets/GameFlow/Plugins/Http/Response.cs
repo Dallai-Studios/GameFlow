@@ -6,18 +6,13 @@ namespace GameFlow.Plugins.Http
 {
     public class Response
     {
-        #region "Public Properties"
-            public string Headers;
+        public string Headers;
             public string Body;
             public int StatusCode;
             public bool IsSuccessStatusCode;
-        #endregion
 
-        #region "Private Properties"
             private HttpResponseMessage _responseMessage;
-        #endregion
 
-        #region "Public Methods"
             /// <summary>
             /// This method will abstract the response and build it. This process runs automatically
             /// </summary>
@@ -38,14 +33,11 @@ namespace GameFlow.Plugins.Http
                 T bodyContent = JsonUtility.FromJson<T>(this.Body);
                 return bodyContent;
             }
-        #endregion
 
-        #region "Constructors"
             public Response(HttpResponseMessage ResponseMessage)
             {
                 this._responseMessage = ResponseMessage;
             }
-        #endregion
     }
 }
 

@@ -7,12 +7,9 @@ namespace GameFlow.Plugins.Http
 {
     public class Request
     {
-        #region "Public Properties"
-            public Dictionary<string, string> Headers { get; set; }
+        public Dictionary<string, string> Headers { get; set; }
             public StringContent Body { get; set; }
-        #endregion
 
-        #region "Public Methods"
             public void SetRequestHeaders(Dictionary<string, string> RequestHeaders)
             {
                 this.Headers = RequestHeaders;
@@ -23,11 +20,8 @@ namespace GameFlow.Plugins.Http
                 string stringfyedContent = JsonUtility.ToJson(BodyContent);
                 this.Body = new StringContent(stringfyedContent, Encoding.UTF8, "application/json");
             }
-        #endregion
 
-        #region "Constructors"
             public Request() {}
-        #endregion
     }
 }
 
