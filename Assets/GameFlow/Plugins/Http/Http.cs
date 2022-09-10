@@ -119,11 +119,11 @@ namespace GameFlow.Plugins.Http
         /// Performs a GET request method
         /// </summary>
         /// <param name="URL">(string) The URL to make the request</param>
-        /// <param name="Headers">(Dictionary<string, string>) The request headers</param>
+        /// <param name="Headers">(Dictionary) The request headers</param>
         /// <returns>Returns a new Response instance (awaitable)</returns>
         public async Task<Response> Delete(string URL, Dictionary<string, string> Headers = null)
         {
-            this.SetDefaultHeaders();
+            this.SetDefaultHeaders(Headers);
             HttpResponseMessage httpResponse = await this._client.DeleteAsync(this.PrepareURL(URL));
             Response response = new Response(httpResponse);
             await response.BuildResponseContent();
