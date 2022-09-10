@@ -31,4 +31,3 @@ namespace GameFlow.Plugins.Http
         public T ParseBody<T>() => JsonUtility.FromJson<T>(this._body);
     }
 }
-
