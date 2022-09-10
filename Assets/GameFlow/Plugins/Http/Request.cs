@@ -9,6 +9,8 @@ namespace GameFlow.Plugins.Http
     {
         public Dictionary<string, string> Headers { get; private set; }
         public StringContent Body { get; private set; }
+
+        public Request() => this.Headers = new Dictionary<string, string>();
         
         /// <summary>
         /// Define the request default headers
