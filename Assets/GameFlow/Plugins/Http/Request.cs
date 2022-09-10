@@ -8,20 +8,24 @@ namespace GameFlow.Plugins.Http
     public class Request
     {
         public Dictionary<string, string> Headers { get; set; }
-            public StringContent Body { get; set; }
+        public StringContent Body { get; set; }
+        
+        /// <summary>
+        /// Define the request default headers
+        /// </summary>
+        /// <param name="RequestHeaders">A Dictionary with the header keys (string) and values (string)</param>
+        public void SetRequestHeaders(Dictionary<string, string> RequestHeaders) => this.Headers = RequestHeaders;
 
-            public void SetRequestHeaders(Dictionary<string, string> RequestHeaders)
-            {
-                this.Headers = RequestHeaders;
-            }
-
-            public void SetRequestBody<T>(T BodyContent)
-            {
-                string stringfyedContent = JsonUtility.ToJson(BodyContent);
-                this.Body = new StringContent(stringfyedContent, Encoding.UTF8, "application/json");
-            }
-
-            public Request() {}
+        /// <summary>
+        /// Define the request body payload
+        /// </summary>
+        /// <param name="BodyContent"></param>
+        /// <typeparam name="T"></typeparam>
+        public void SetRequestBody<T>(T BodyContent)
+        {
+            string stringedContent = JsonUtility.ToJson(BodyContent);
+            this.Body = new StringContent(stringedContent, Encoding.UTF8, "application/json");
+        }
     }
 }
 
