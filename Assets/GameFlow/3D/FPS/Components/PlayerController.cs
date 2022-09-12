@@ -1,4 +1,5 @@
 using GameFlow._3D.FPS.Scriptable_Objects;
+using GameFlow.General.Interfaces;
 using GameFlow.General.Scriptable_Objects;
 using GameFlow.Misc;
 using UnityEngine;
