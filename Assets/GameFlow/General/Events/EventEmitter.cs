@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace GameFlow.General.Events
 {
@@ -8,16 +9,16 @@ namespace GameFlow.General.Events
     {
         [Header("Event Configuration")]
         [Tooltip("This field defines if the event already was invoked on any part of your game")]
-        public bool EventAlreadyInvoked;
+        public bool eventAlreadyInvoked;
 
         [Tooltip("This field defines if the event can run multiple times during the gameplay phase")]
-        public bool EventCanRunMultipleTimes;
+        public bool eventCanRunMultipleTimes;
         public event Action Event;
 
         public void RaiseEvent()
         {
-            if(this.EventCanRunMultipleTimes) this.Event?.Invoke();
-            else if(!this.EventAlreadyInvoked) this.Event?.Invoke();
+            if(this.eventCanRunMultipleTimes) this.Event?.Invoke();
+            else if(!this.eventAlreadyInvoked) this.Event?.Invoke();
         }
     }
 }
