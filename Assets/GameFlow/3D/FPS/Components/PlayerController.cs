@@ -1,5 +1,8 @@
+using System;
 using GameFlow._3D.FPS.Scriptable_Objects;
+using GameFlow.General.Managers;
 using GameFlow.General.Scriptable_Objects;
+using GameFlow.General.Types;
 using GameFlow.Misc;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -48,6 +51,7 @@ namespace GameFlow._3D.FPS.Components
 
         private void Start()
         {
+            GameFlowManager.Instance.OnGameStateChange += this.EnablePlayerController;
             this.EnablePlayerController();
             if(!this.playerAimCamera) Debug.LogError(FrameworkStrings.NoCameraProvided, this);
             if(!this.playerAttributes) Debug.LogError(FrameworkStrings.NoPlayerAttributesProvided, this);
@@ -70,7 +74,15 @@ namespace GameFlow._3D.FPS.Components
             this.PerformAiming();
         }
 
-        private void EnablePlayerController() => this._controllerIsEnabled = true;
+        private void OnDestroy()
+        {
+            GameFlowManager.Instance.OnGameStateChange -= this.EnablePlayerController;
+        }
+
+        private void EnablePlayerController()
+        {
+            this._controllerIsEnabled = GameFlowManager.Instance.actualGameState == GameState.PLAY;
+        }
 
         private void ReadInputValues()
         {

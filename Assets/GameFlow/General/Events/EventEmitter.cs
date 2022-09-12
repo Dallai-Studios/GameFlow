@@ -17,8 +17,8 @@ namespace GameFlow.General.Events
 
         public void RaiseEvent()
         {
-            if(this.eventCanRunMultipleTimes) this.Event?.Invoke();
-            else if(!this.eventAlreadyInvoked) this.Event?.Invoke();
+            if(!this.eventAlreadyInvoked) this.Event?.Invoke();
+            if(this.eventAlreadyInvoked && this.eventCanRunMultipleTimes) this.Event?.Invoke();
         }
     }
 }

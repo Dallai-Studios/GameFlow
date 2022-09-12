@@ -2,7 +2,10 @@ using UnityEngine;
 
 namespace GameFlow.General.Scriptable_Objects
 {
-    [CreateAssetMenu(fileName = "Player Controller Base Attributes", menuName = "GameFlow/Player/Attributes/Player Controller Base Attributes")]
+    [CreateAssetMenu(
+        fileName = "Player Controller Base Attributes", 
+        menuName = "GameFlow/Player/Attributes/Player Controller Base Attributes"
+    )]
     public class PlayerControllerBaseAttributes : ScriptableObject
     {
         [Header("Player Basic Attributes")]
