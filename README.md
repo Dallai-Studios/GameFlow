@@ -5,8 +5,8 @@ The framework is designed to help developers with a lot of tools and modular
 components to block their games and prototype and or create full games.
 
 ### Still on Development
-As you can see, the framework is being developed and there is no much to offer now
-but the first released is defined to be ready on January 2023. If you want to be part
+As you can see, the framework is being developed and there is no much to offer right now,
+but the first release is defined to be ready on January 2023. If you want to be part
 of the development process, please be sure to follow the steps bellow:
 
 ### Collaborating
