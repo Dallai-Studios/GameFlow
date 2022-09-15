@@ -1,6 +1,6 @@
 # GameFlow Framework (On Development)
 This framework was created aiming to help developers to create incredible games
-is a faster way.
+in a faster way.
 The framework is designed to help developers with a lot of tools and modular
 components to block their games and prototype and or create full games.
 
