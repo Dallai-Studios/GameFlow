@@ -1,3 +1,55 @@
-.ds-node-title {
-    
+.ds-node {
+    background-color: #1d1d1e;
+    padding: 8px;
+}
+
+.ds-node-data {
+    background-color: #212325;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.ds-node-text-field > .unity-text-field__input {
+    background-color: #1d1d1e;
+    border-color: #27292c;
+    border-radius: 4px;
+    max-width: 240px;
+    max-height: 160px;
+    padding: 8px;
+}
+
+.ds-node-text-field-hidden > .unity-text-field__input {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.ds-node-text-field-hidde > .unity-text-field__input:focus {
+    background-color: #1d1d1e;
+    border-color: #27292c;
+}
+
+.ds-node-filename > .unity-text-field__input {
+    max-width: 1000px;
+}
+
+.ds-node-filename > .unity-text-field__input:focus {
+    margin: 4px;
+    padding: 4px;
+}
+
+.ds-node-choice-text-field > .unity-text-field__input {
+    font-size: 11px;
+    height: 35px;
+    max-width: 1000px;
+    min-width: 0px;
+}
+
+.ds-node-choice-text-field > .unity-text-field__input:focus {
+    height: 25px;
+    margin: 4px;
+    padding: 4px;
+}
+
+TextField {
+    margin-left: 0px;
 }
