@@ -3,11 +3,11 @@ using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine.UIElements;
 
-namespace GameFlow.Editor.DialogueSystem
+namespace GameFlow.Editors.DialogueSystem
 {
     public class DialogueSystemEditorWindow : EditorWindow
     {
-        [MenuItem("Game Flow/Dialogue System Graph")]
+        [MenuItem("Game Flow/Dialogue System Graph", priority = 1)]
         public static void Open()
         {
             GetWindow<DialogueSystemEditorWindow>("Game Flow :: Dialogue System Graph");

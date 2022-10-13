@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-using GameFlow.Editor.DialogueSystem.Enums;
+using GameFlow.Editors.DialogueSystem.Enums;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace GameFlow.Editor.DialogueSystem.Elements
+namespace GameFlow.Editors.DialogueSystem.Elements
 {
     public class DialogueSystemBaseNode : Node
     {

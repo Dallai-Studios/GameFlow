@@ -8,21 +8,21 @@ namespace GameFlow.Misc
         public const string CameraReferenceTooltip = 
             "In order for this component to work properly, you must provide a camera reference to simulate the player vision";
 
-        public const string MovementInputTooltip = 
-            "Use this field to define the list of inputs to be used if the new input system is active." 
-            + " If you don't want to use the new input system, you must configure every input on project settings.";
+        public const string MovementInputTooltip =
+            "Use this field to define the list of inputs to be used if the new input system is active.";
 
         public const string AimYInputTooltip =
-            "Use this field to define the list of Aim Y inputs if the new input system is active."
-            + " If you don't want to use the new input system, you must configure every input on project settings.";
+            "Use this field to define the list of Aim Y inputs if the new input system is active.";
 
         public const string AimXInputTooltip = 
-            "Use this field to define the list of Aim X inputs if the new input system is active."
-            + " If you don't want to use the new input system, you must configure every input on project settings.";
+            "Use this field to define the list of Aim X inputs.";
+
+        public const string JumpInputTooltip =
+            "Use this field to define a list of jump inputs.";
         
         public const string NoCameraProvided = 
             "No camera provided for the player controller. In order for this component to work properly,"
-            + " you must provide a aim camera to represent the player vision.";
+            + " you must provide a aim camera to represent the player's vision.";
         
         public const string NoPlayerAttributesProvided = 
             "No player attributes provided. In order for this component to work, you must provide a Player Attributes Scriptable Object";

@@ -1,0 +1,11 @@
+@@ define if the framework must inject custom managers
+inject-custom-managers:yes
+
+@@ define the custom managers config file location
+managers-folder:Assets/GameFlow Definition Files/Managers/
+
+@@ Define the managers definition file name
+managers-file:my-managers.gfd
+
+@@ Define where the framework must create the base config assets
+config-so-folder:Assets/GameFlow Definition Files/SO Assets/

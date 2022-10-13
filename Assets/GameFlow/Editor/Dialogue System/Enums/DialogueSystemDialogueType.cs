@@ -1,4 +1,4 @@
-namespace GameFlow.Editor.DialogueSystem.Enums
+namespace GameFlow.Editors.DialogueSystem.Enums
 {
     public enum DialogueSystemDialogueType
     {

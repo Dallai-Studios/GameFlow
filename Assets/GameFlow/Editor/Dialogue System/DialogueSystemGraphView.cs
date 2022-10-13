@@ -1,11 +1,11 @@
-using GameFlow.Editor.DialogueSystem.Elements;
+using GameFlow.Editors.DialogueSystem.Elements;
 using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
-using GameFlow.Editor.DialogueSystem.Enums;
+using GameFlow.Editors.DialogueSystem.Enums;
 
-namespace GameFlow.Editor.DialogueSystem
+namespace GameFlow.Editors.DialogueSystem
 {
     public class DialogueSystemGraphView : GraphView
     {
